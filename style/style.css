@@ -1,0 +1,67 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #fff;
+}
+ul, li {
+	list-style: none;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.header {
+	background-color: #010;
+}
+.header__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+}
+.header__logo {
+	font-size: 45px;
+	margin: -20px 0;
+}
+.header__menu {
+	display: flex;
+}
+.header__menu-item {
+	font-size: 20px;
+	margin-left: 25px;
+}
+.page {
+	position: relative;
+	background-color: darkgoldenrod;
+}
+.page__wrapper {
+	padding: 200px 0;
+	text-transform: uppercase;
+}
+.page__title {
+	font-size: 90px;
+	color: rgba(0,0,0,0);
+	-webkit-text-stroke: 2px #fff;
+}
+.page__subtitle {
+	font-size: 45px;
+	max-width: 65%;
+}
+.page__image {
+	position: absolute;
+	top: 100px;
+	right: 220px;
+	width: 300px;
+	transform: rotateZ(25deg);
+	filter: invert(1);
+}
+.page__image::before {
+	content: 'iQ';
+	position: absolute;
+	top: 100px;
+	right: 100px;
+	color: #000;
+	width: 50px;
+	height: 50px;
+}
